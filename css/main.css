@@ -1,0 +1,173 @@
+.container {
+    width: 100%!important;
+}
+
+.main-header {
+    top: 0px!important;
+}
+
+#menu-wrapper {
+    overflow: initial;
+}
+
+.banner {
+    background-image: url(../images/ticket-2974645_1280.jpg);
+}
+
+.banner-content h2 {
+    font-size: 5rem!important;
+}
+
+#about {
+    background-image: url(../images/film-1668918_1280.jpg);
+}
+
+#about .first-service, #about .second-service, #about .third-service {
+    height: 600px;
+}
+
+#about .first-service {
+    background-color: rgba(107, 7, 120, 0.7);
+}
+
+#about .second-service {
+    background-color: rgb(37, 102, 38, 0.7);
+}
+
+#about .third-service {
+    background-color: rgba(206, 209, 30, 0.7);
+}
+
+.icon img {
+  border: 2px solid;
+  border-color: white;
+  max-width: 91px;
+  border-radius: 50%;
+}
+
+/* ==================================================================== */
+/* ==================================================================== */
+/* ==================================================================== */
+
+/* PRICING */
+
+.plan-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+  margin: 0;
+}
+
+/* Create three columns of equal width */
+.columns {
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+  }
+
+/* Style the list */
+.price {
+  list-style-type: none;
+  /* border: 1px solid #eee; */
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* Add shadows on hover */
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+/* Pricing header */
+.price .header {
+ /* background-image: url(../images/popcorn-1085072_1280.jpg);*/
+ background-color: #ffbc0d;
+  color: white;
+  font-size: 25px;
+}
+
+/* List items */
+.price li {
+  border-bottom: 1px solid #ffbc0d;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Grey list item */
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+.button {
+  background-color: #256626;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.button:hover {
+  color: white;
+}
+/* Change the width of the three columns to 100%
+(to stack horizontally on small screens) */
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
+
+.right-image img {
+  max-width: 400px;
+  
+}
+
+
+.text-content a{
+  color: #ffbc0d!important;
+  font-size: 1.7rem!important;
+  font-weight: bolder!important;
+}
+
+
+
+/* ==================================================================== */
+/* ==================================================================== */
+/* ==================================================================== */
+
+/* Footer */
+
+footer {
+  background-color: #ffbc0d;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #fff;
+  text-align: center;
+}
+
+.social-icons {
+  font-size: 3rem!important;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #d1961e;
+}
+
+.calum{
+  height: 90px;
+  width: 100px;
+}
