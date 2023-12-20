@@ -1,0 +1,20 @@
+name: Film Society Email
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  send-email:
+    runs-on: ubuntu-latest
+    environment: production
+    env:
+      SMTP_PORT: ${{ vars.SMTP_PORT }}
+      SMTP_HOST: ${{ vars.SMTP_HOST }}
+      SMTP_USER: ${{ vars.SMTP_USER }}
+      SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+      
+    steps:
+      - uses: actions/checkout@v4
+      - run: python notify.py -host $SMTP_HOST -port $SMTP_PORT -username $SMTP_USER -password "${{ secrets.SMTP_PASSWORD }}"
+        working-directory: ./.github/python
